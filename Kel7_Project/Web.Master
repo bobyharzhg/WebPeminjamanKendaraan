@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Web.master.vb" Inherits="Kel7_Project.Web" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Info Ikan</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon IKON DI TITLE-->
+    <link rel="icon" href="dist/assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+    <link href="dist/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Required Js -->
+    <script src="dist/assets/js/vendor-all.min.js"></script>
+    <script src="dist/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="dist/assets/js/pcoded.min.js"></script>
+
+    <!-- Apex Chart -->
+    <script src="dist/assets/js/plugins/apexcharts.min.js"></script>
+
+
+    <!-- custom-chart js -->
+
+    <script src="dist/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="dist/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="dist/assets/js/pages/dashboard-main.js"></script>
+    <script src="dist/vendor/chart.js/Chart-min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="dist/js/demo/datatables-demo.js"></script>
+</body>
+
+</html>
+

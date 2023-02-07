@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{30C65DCA-1429-49DF-B943-8C80C4997C4C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Kel7_Project</RootNamespace>
+    <AssemblyName>Kel7_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Kel7_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Kel7_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Dashboard_a.aspx" />
+    <Content Include="dist\assets\css\layout-dark.css" />
+    <Content Include="dist\assets\css\layout-rtl.css" />
+    <Content Include="dist\assets\css\plugins\animate.min.css" />
+    <Content Include="dist\assets\css\plugins\bootstrap.min.css" />
+    <Content Include="dist\assets\css\plugins\perfect-scrollbar.css" />
+    <Content Include="dist\assets\css\plugins\prism-coy.css" />
+    <Content Include="dist\assets\css\style.css" />
+    <Content Include="dist\assets\fonts\fa-brands-400.svg" />
+    <Content Include="dist\assets\fonts\fa-regular-400.svg" />
+    <Content Include="dist\assets\fonts\fa-solid-900.svg" />
+    <Content Include="dist\assets\fonts\feather.svg" />
+    <Content Include="dist\assets\fonts\Flaticon.svg" />
+    <Content Include="dist\assets\fonts\pct.svg" />
+    <Content Include="dist\assets\images\a.png" />
+    <Content Include="dist\assets\images\auth\auth-logo-dark.png" />
+    <Content Include="dist\assets\images\auth\auth-logo.png" />
+    <Content Include="dist\assets\images\auth\img-auth-big.jpg" />
+    <Content Include="dist\assets\images\auth\img-auth-bigs.jpg" />
+    <Content Include="dist\assets\images\auth\img-auth-bigss.jpg" />
+    <Content Include="dist\assets\images\browser\chrome.png" />
+    <Content Include="dist\assets\images\browser\firefox.png" />
+    <Content Include="dist\assets\images\browser\ie.png" />
+    <Content Include="dist\assets\images\browser\opera.png" />
+    <Content Include="dist\assets\images\browser\safari.png" />
+    <Content Include="dist\assets\images\cd-arrow.svg" />
+    <Content Include="dist\assets\images\close.png" />
+    <Content Include="dist\assets\images\complete.png" />
+    <Content Include="dist\assets\images\favicon.ico" />
+    <Content Include="dist\assets\images\faviconssss.ico" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-1.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-2.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-3.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-4.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-5.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\img-grd-gal-6.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-1.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-2.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-3.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-4.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-5.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-6.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-7.jpg" />
+    <Content Include="dist\assets\images\gallery-grid\masonry-8.jpg" />
+    <Content Include="dist\assets\images\hover-effect\triangle.svg" />
+    <Content Include="dist\assets\images\hover-effect\triangle2.svg" />
+    <Content Include="dist\assets\images\ikan\BDP_Ikan_Oscar.png" />
+    <Content Include="dist\assets\images\ikan\blackghost1.jpg" />
+    <Content Include="dist\assets\images\ikan\black_tetra.jpg" />
+    <Content Include="dist\assets\images\ikan\cae_2_-_aquascapebatang.JPG" />
+    <Content Include="dist\assets\images\ikan\Color_Hunt_Palette_f5e8c7deba9d9e77776f4c5b.png" />
+    <Content Include="dist\assets\images\ikan\Color_Hunt_Palette_f5e8c7deba9d9e77776f4c5b1.png" />
+    <Content Include="dist\assets\images\ikan\default.png" />
+    <Content Include="dist\assets\images\ikan\download.jpg" />
+    <Content Include="dist\assets\images\ikan\emperor-tetra.jpg" />
+    <Content Include="dist\assets\images\ikan\fish-5970565-1920-bbOs5xt.jpg" />
+    <Content Include="dist\assets\images\ikan\guppy.jpg" />
+    <Content Include="dist\assets\images\ikan\harlequin-rasbora-1378462-03-f63f75bedf424e409f83beb7ffcd00fa.jpeg" />
+    <Content Include="dist\assets\images\ikan\harlequin.jpg" />
+    <Content Include="dist\assets\images\ikan\ikan-lemon-diakuarium.png" />
+    <Content Include="dist\assets\images\ikan\Ikan-tetra-oranye.jpg" />
+    <Content Include="dist\assets\images\ikan\ikan_molly-1_width-800.jpg" />
+    <Content Include="dist\assets\images\ikan\jenis-ikan-manfish-zabra.jpg" />
+    <Content Include="dist\assets\images\ikan\neon_tetra.jpg" />
+    <Content Include="dist\assets\images\ikan\zevra.jpg" />
+    <Content Include="dist\assets\images\light-box\l1.jpg" />
+    <Content Include="dist\assets\images\light-box\l2.jpg" />
+    <Content Include="dist\assets\images\light-box\l3.jpg" />
+    <Content Include="dist\assets\images\light-box\l4.jpg" />
+    <Content Include="dist\assets\images\light-box\l5.jpg" />
+    <Content Include="dist\assets\images\light-box\l6.jpg" />
+    <Content Include="dist\assets\images\light-box\mixin.jpg" />
+    <Content Include="dist\assets\images\light-box\sl1.jpg" />
+    <Content Include="dist\assets\images\light-box\sl2.jpg" />
+    <Content Include="dist\assets\images\light-box\sl3.jpg" />
+    <Content Include="dist\assets\images\light-box\sl4.jpg" />
+    <Content Include="dist\assets\images\light-box\sl5.jpg" />
+    <Content Include="dist\assets\images\light-box\sl6.jpg" />
+    <Content Include="dist\assets\images\light-box\smixin.jpg" />
+    <Content Include="dist\assets\images\light-box\v1.jpg" />
+    <Content Include="dist\assets\images\light-box\v2.jpg" />
+    <Content Include="dist\assets\images\light-box\v3.jpg" />
+    <Content Include="dist\assets\images\light-box\v4.jpg" />
+    <Content Include="dist\assets\images\loading.gif" />
+    <Content Include="dist\assets\images\logo-dark.png" />
+    <Content Include="dist\assets\images\logo-docs.png" />
+    <Content Include="dist\assets\images\logo-icon.png" />
+    <Content Include="dist\assets\images\logo-old.png" />
+    <Content Include="dist\assets\images\logo-thumb.png" />
+    <Content Include="dist\assets\images\logo.png" />
+    <Content Include="dist\assets\images\logo11.png" />
+    <Content Include="dist\assets\images\logoI.png" />
+    <Content Include="dist\assets\images\logos.png" />
+    <Content Include="dist\assets\images\maintance\404.png" />
+    <Content Include="dist\assets\images\maintance\maintance.png" />
+    <Content Include="dist\assets\images\maintance\sark.svg" />
+    <Content Include="dist\assets\images\maintance\ship.svg" />
+    <Content Include="dist\assets\images\maintance\sparcle-1.png" />
+    <Content Include="dist\assets\images\maintance\sparcle-2.png" />
+    <Content Include="dist\assets\images\next.png" />
+    <Content Include="dist\assets\images\prev.png" />
+    <Content Include="dist\assets\images\product\prod-1.jpg" />
+    <Content Include="dist\assets\images\profile\bg-1.jpg" />
+    <Content Include="dist\assets\images\profile\bg-2.jpg" />
+    <Content Include="dist\assets\images\profile\bg-3.jpg" />
+    <Content Include="dist\assets\images\profile\bg-4.jpg" />
+    <Content Include="dist\assets\images\profile\cover.jpg" />
+    <Content Include="dist\assets\images\profile\default.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-1.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-2.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-3.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-4.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-5.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-6.jpg" />
+    <Content Include="dist\assets\images\slider\img-slide-7.jpg" />
+    <Content Include="dist\assets\images\sss.png" />
+    <Content Include="dist\assets\images\ticket\p1.jpg" />
+    <Content Include="dist\assets\images\ticket\p2.jpg" />
+    <Content Include="dist\assets\images\ticket\p3.jpg" />
+    <Content Include="dist\assets\images\ticket\p4.jpg" />
+    <Content Include="dist\assets\images\ticket\p5.jpg" />
+    <Content Include="dist\assets\images\user\avatar-1.jpg" />
+    <Content Include="dist\assets\images\user\avatar-2.jpg" />
+    <Content Include="dist\assets\images\user\avatar-3.jpg" />
+    <Content Include="dist\assets\images\user\avatar-4.jpg" />
+    <Content Include="dist\assets\images\user\avatar-5.jpg" />
+    <Content Include="dist\assets\images\user\cover.jpg" />
+    <Content Include="dist\assets\images\user\img-avatar-1.jpg" />
+    <Content Include="dist\assets\images\user\img-avatar-2.jpg" />
+    <Content Include="dist\assets\images\user\img-avatar-3.jpg" />
+    <Content Include="dist\assets\images\widget\AUSTRALIA.jpg" />
+    <Content Include="dist\assets\images\widget\blur-bg.png" />
+    <Content Include="dist\assets\images\widget\BRAZIL.jpg" />
+    <Content Include="dist\assets\images\widget\dashborad-1.jpg" />
+    <Content Include="dist\assets\images\widget\dashborad-2.jpg" />
+    <Content Include="dist\assets\images\widget\dashborad-3.jpg" />
+    <Content Include="dist\assets\images\widget\dashborad-4.jpg" />
+    <Content Include="dist\assets\images\widget\dashborad-5.jpg" />
+    <Content Include="dist\assets\images\widget\emoticon.jpg" />
+    <Content Include="dist\assets\images\widget\GERMANY.jpg" />
+    <Content Include="dist\assets\images\widget\img-round1.jpg" />
+    <Content Include="dist\assets\images\widget\p1.jpg" />
+    <Content Include="dist\assets\images\widget\p2.jpg" />
+    <Content Include="dist\assets\images\widget\p3.jpg" />
+    <Content Include="dist\assets\images\widget\p4.jpg" />
+    <Content Include="dist\assets\images\widget\PHONE1.jpg" />
+    <Content Include="dist\assets\images\widget\PHONE2.jpg" />
+    <Content Include="dist\assets\images\widget\PHONE3.jpg" />
+    <Content Include="dist\assets\images\widget\PHONE4.jpg" />
+    <Content Include="dist\assets\images\widget\profile-person1.jpg" />
+    <Content Include="dist\assets\images\widget\slider5.jpg" />
+    <Content Include="dist\assets\images\widget\slider6.jpg" />
+    <Content Include="dist\assets\images\widget\slider7.jpg" />
+    <Content Include="dist\assets\images\widget\UK.jpg" />
+    <Content Include="dist\assets\images\widget\USA.jpg" />
+    <Content Include="dist\assets\images\widget\user-blur-bg.png" />
+    <Content Include="dist\assets\images\widget\wather2bottom.png" />
+    <Content Include="dist\assets\images\widget\watherbottom.png" />
+    <Content Include="dist\assets\images\widget\wathernature.png" />
+    <Content Include="dist\assets\images\widget\watherstar1.png" />
+    <Content Include="dist\assets\images\widget\watherstar2.png" />
+    <Content Include="dist\assets\json\2500.txt" />
+    <Content Include="dist\assets\json\file-upload.php" />
+    <Content Include="dist\assets\js\analytics.js" />
+    <Content Include="dist\assets\js\analytics.min.js" />
+    <Content Include="dist\assets\js\horizontal-menu.js" />
+    <Content Include="dist\assets\js\pages\chart-apex.js" />
+    <Content Include="dist\assets\js\pages\dashboard-main.js" />
+    <Content Include="dist\assets\js\pages\google-maps.js" />
+    <Content Include="dist\assets\js\pcoded.js" />
+    <Content Include="dist\assets\js\pcoded.min.js" />
+    <Content Include="dist\assets\js\plugins\apexcharts.min.js" />
+    <Content Include="dist\assets\js\plugins\bootstrap.min.js" />
+    <Content Include="dist\assets\js\plugins\gmaps.min.js" />
+    <Content Include="dist\assets\js\plugins\jquery-ui.min.js" />
+    <Content Include="dist\assets\js\plugins\perfect-scrollbar.min.js" />
+    <Content Include="dist\assets\js\plugins\prism.js" />
+    <Content Include="dist\assets\js\uikit.js" />
+    <Content Include="dist\assets\js\uikit.min.js" />
+    <Content Include="dist\assets\js\vendor-all.js" />
+    <Content Include="dist\assets\js\vendor-all.min.js" />
+    <Content Include="dist\auth-signin.html" />
+    <Content Include="dist\auth-signup.html" />
+    <Content Include="dist\bc_alert.html" />
+    <Content Include="dist\bc_badges.html" />
+    <Content Include="dist\bc_breadcrumb-pagination.html" />
+    <Content Include="dist\bc_button.html" />
+    <Content Include="dist\bc_card.html" />
+    <Content Include="dist\bc_carousel.html" />
+    <Content Include="dist\bc_collapse.html" />
+    <Content Include="dist\bc_extra.html" />
+    <Content Include="dist\bc_grid.html" />
+    <Content Include="dist\bc_modal.html" />
+    <Content Include="dist\bc_progress.html" />
+    <Content Include="dist\bc_spinner.html" />
+    <Content Include="dist\bc_tabs.html" />
+    <Content Include="dist\bc_toasts.html" />
+    <Content Include="dist\bc_tooltip-popover.html" />
+    <Content Include="dist\bc_typography.html" />
+    <Content Include="dist\chart-apex.html" />
+    <Content Include="dist\form_elements.html" />
+    <Content Include="dist\index.html" />
+    <Content Include="dist\layout-horizontal.html" />
+    <Content Include="dist\layout-vertical.html" />
+    <Content Include="dist\map-google.html" />
+    <Content Include="dist\sample-page.html" />
+    <Content Include="dist\tbl_bootstrap.html" />
+    <Content Include="form_kendaraan.aspx" />
+    <Content Include="form_pinjam.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Registrasi.aspx" />
+    <Content Include="vw_kendaraan.aspx" />
+    <Content Include="vw_kendaraan_a.aspx" />
+    <Content Include="vw_pinjam.aspx" />
+    <Content Include="vw_pinjam_a.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.aspx.designer.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_a.aspx.designer.vb">
+      <DependentUpon>Dashboard_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_a.aspx.vb">
+      <DependentUpon>Dashboard_a.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DataSetPinjam.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPinjam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form_kendaraan.aspx.designer.vb">
+      <DependentUpon>form_kendaraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form_kendaraan.aspx.vb">
+      <DependentUpon>form_kendaraan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="form_pinjam.aspx.designer.vb">
+      <DependentUpon>form_pinjam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form_pinjam.aspx.vb">
+      <DependentUpon>form_pinjam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HandlerKendaraan.ashx.vb">
+      <DependentUpon>HandlerKendaraan.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registrasi.aspx.designer.vb">
+      <DependentUpon>Registrasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrasi.aspx.vb">
+      <DependentUpon>Registrasi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vw_kendaraan.aspx.designer.vb">
+      <DependentUpon>vw_kendaraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vw_kendaraan.aspx.vb">
+      <DependentUpon>vw_kendaraan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vw_kendaraan_a.aspx.designer.vb">
+      <DependentUpon>vw_kendaraan_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vw_kendaraan_a.aspx.vb">
+      <DependentUpon>vw_kendaraan_a.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vw_pinjam.aspx.designer.vb">
+      <DependentUpon>vw_pinjam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vw_pinjam.aspx.vb">
+      <DependentUpon>vw_pinjam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vw_pinjam_a.aspx.designer.vb">
+      <DependentUpon>vw_pinjam_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vw_pinjam_a.aspx.vb">
+      <DependentUpon>vw_pinjam_a.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Web.Master.designer.vb">
+      <DependentUpon>Web.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Web.Master.vb">
+      <DependentUpon>Web.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\assets\fonts\fa-brands-400.eot" />
+    <Content Include="dist\assets\fonts\fa-brands-400.ttf" />
+    <Content Include="dist\assets\fonts\fa-brands-400.woff" />
+    <Content Include="dist\assets\fonts\fa-brands-400.woff2" />
+    <Content Include="dist\assets\fonts\fa-regular-400.eot" />
+    <Content Include="dist\assets\fonts\fa-regular-400.ttf" />
+    <Content Include="dist\assets\fonts\fa-regular-400.woff" />
+    <Content Include="dist\assets\fonts\fa-regular-400.woff2" />
+    <Content Include="dist\assets\fonts\fa-solid-900.eot" />
+    <Content Include="dist\assets\fonts\fa-solid-900.ttf" />
+    <Content Include="dist\assets\fonts\fa-solid-900.woff" />
+    <Content Include="dist\assets\fonts\fa-solid-900.woff2" />
+    <Content Include="dist\assets\fonts\feather.eot" />
+    <Content Include="dist\assets\fonts\feather.ttf" />
+    <Content Include="dist\assets\fonts\feather.woff" />
+    <Content Include="dist\assets\fonts\Flaticon.eot" />
+    <Content Include="dist\assets\fonts\Flaticon.ttf" />
+    <Content Include="dist\assets\fonts\Flaticon.woff" />
+    <Content Include="dist\assets\fonts\Flaticon.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFUZ0bbck.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFVp0bbck.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFVZ0b.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFW50bbck.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFWJ0bbck.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFWp0bbck.woff2" />
+    <Content Include="dist\assets\fonts\opensans\mem8YaGs126MiZpBA-UFWZ0bbck.woff2" />
+    <Content Include="dist\assets\fonts\pct.eot" />
+    <Content Include="dist\assets\fonts\pct.ttf" />
+    <Content Include="dist\assets\fonts\pct.woff" />
+    <Content Include="dist\assets\json\cities.json" />
+    <Content Include="dist\assets\json\citynames.json" />
+    <Content Include="HandlerKendaraan.ashx" />
+    <Content Include="DataSetPinjam.xsc">
+      <DependentUpon>DataSetPinjam.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSetPinjam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPinjam.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSetPinjam.xss">
+      <DependentUpon>DataSetPinjam.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.Master" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\assets\images\mobil\" />
+    <Folder Include="dist\assets\images\New folder\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49278</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
